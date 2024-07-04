@@ -1,0 +1,109 @@
+.contact-pages-bg {
+  position: absolute;
+  width: 16.25%;
+  right: 0;
+  bottom: 0;
+  img {
+    width: 100%;
+  }
+}
+.section-contact {
+  padding-top: 169px;
+  padding-bottom: 64px;
+  .section-contact-main {
+    width: 56.04166%;
+    margin: auto;
+    h1 {
+      font-size: 44px;
+      color: #000;
+      @extend .normal-font-style500;
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+    > p {
+      font-size: 20px;
+      color: #000;
+      line-height: 1.6;
+      @extend .normal-font-style500;
+      padding-bottom: 64px;
+      text-align: center;
+    }
+    span {
+      color: red;
+    }
+  }
+}
+.contact-us-form {
+  padding-top: 80px;
+  padding-bottom: 64px;
+  > p {
+    font-size: 18px;
+    @extend.normal-font-style400;
+    color: #000;
+    margin-bottom: 3rem;
+  }
+  .contact-us-item {
+    label {
+      font-size: 18px;
+      @extend.normal-font-style400;
+      color: #000;
+      margin-bottom: 1rem;
+    }
+
+    input,
+    select {
+      height: 53px;
+    }
+    select {
+      font-size: 18px;
+      @extend.normal-font-style400;
+      color: #000;
+    }
+    textarea {
+      height: 159px;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .section-contact {
+    padding-top: 64px;
+    padding-bottom: 48px;
+    .section-contact-main {
+      width: 83%;
+      h1 {
+        font-size: 20px;
+        margin-bottom: 3rem;
+      }
+      > p {
+        font-size: 15px;
+        padding-bottom: 0px;
+        margin-bottom: 44px;
+      }
+    }
+  }
+  .contact-us-form {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    > p {
+      font-size: 15px;
+      margin-bottom: 3rem;
+    }
+    .contact-us-item {
+      label {
+        font-size: 15px;
+        margin-bottom: 12px;
+      }
+
+      input,
+      select {
+        height: 43px;
+      }
+      select {
+        font-size: 15px;
+      }
+      textarea {
+        height: 154px;
+      }
+    }
+  }
+}

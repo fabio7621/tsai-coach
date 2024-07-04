@@ -1,0 +1,665 @@
+//手機板選單
+//https://codepen.io/fabio7621/pen/PovROrK
+.side-bar-items {
+  position: fixed;
+  right: 24px;
+  top: 90vh;
+  z-index: 99999;
+  .side-item {
+    width: 70px;
+    display: block;
+    img {
+      width: 100%;
+    }
+  }
+}
+.swiper-pagination-bullet {
+  background-color: #fff;
+  opacity: 1;
+  width: 12px;
+  height: 12px;
+}
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #0ab4c8;
+}
+
+.section-index-about {
+  .index-about-title {
+    padding-top: 109px;
+    padding-bottom: 61px;
+    h2 {
+      width: fit-content;
+      margin: auto;
+      font-size: 160px;
+      text-align: center;
+      font-weight: bold;
+      line-height: 1;
+      background: linear-gradient(0deg, rgba(10, 180, 200, 1) 0%, rgba(80, 211, 206, 1) 100%);
+      -webkit-background-clip: text;
+      color: transparent;
+      transform: skew(-10deg);
+      span {
+        font-size: 72px;
+        display: block;
+        text-indent: 1.3em;
+      }
+    }
+  }
+  .index-about-main {
+    .index-about-pic {
+      width: 53.33333%;
+      img {
+        width: 100%;
+        vertical-align: middle;
+      }
+    }
+    .index-about-content {
+      width: 30%;
+      padding: 38px 0 0 43px;
+      display: flex;
+      flex-direction: column;
+      h1 {
+        font-size: 44px;
+        color: #000;
+        @extend .normal-font-style500;
+        line-height: 1.4;
+      }
+      .index-about-text {
+        margin: 20px 0 38px;
+        z-index: 10;
+        p {
+          font-size: 18px;
+          color: #000;
+          @extend .normal-font-style400;
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+}
+.know-more-btn {
+  width: fit-content;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 18px;
+  @extend .normal-font-style500;
+  padding: 1.027777em 3.7777777em;
+  background: linear-gradient(0deg, rgb(79, 169, 255) 0%, rgb(80, 211, 206) 100%);
+  &:hover {
+    background: #50d3ce;
+  }
+}
+//首頁背景圖 start
+.index-about-bg {
+  .index-about-bg-pic {
+    position: absolute;
+    width: 14.89583vw; //286
+    right: 0;
+    top: 220px;
+    z-index: -1;
+  }
+  img {
+    width: 100%;
+  }
+}
+.index-about-big-bg {
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  width: 83.75vw;
+  min-width: 397px;
+  z-index: -1;
+  img {
+    width: 100%;
+  }
+  .index-about-bg-tennis {
+    position: absolute;
+    width: 13.125vw;
+    min-width: 100px;
+    right: 0;
+    top: 0;
+    z-index: 9;
+    transform: translate(40%, -35%);
+    img {
+      width: 100%;
+    }
+  }
+}
+.index-about-bg-dotted {
+  position: absolute;
+  width: 16.25vw;
+  min-width: 200px;
+  right: 0;
+  top: 80%;
+  img {
+    width: 100%;
+  }
+}
+.index-news-bg-pic {
+  width: 16.25vw;
+  min-width: 200px;
+  left: 0;
+  top: 208px;
+  z-index: -1;
+  img {
+    width: 100%;
+  }
+}
+//首頁背景圖 end
+
+.section-index-news {
+  .index-news-main {
+    width: 56.041666%;
+    margin: auto;
+    padding-bottom: 96px;
+    .index-news-title {
+      padding: 80px 0 64px;
+      span {
+        font-size: 44px;
+        @extend .normal-font-style500;
+        color: #000;
+        display: block;
+        text-align: center;
+      }
+    }
+    .index-news-lists {
+      .news-lists-title {
+        display: flex;
+        align-items: center;
+        //日期 內容
+        .lists-title-item {
+          p {
+            font-size: 18px;
+            color: #000;
+            @extend.normal-font-style400;
+            padding: 16px 0;
+          }
+          &:nth-child(1) {
+            width: 13%;
+          }
+          &:nth-child(2) {
+            //width: 20%;
+            flex-grow: 1;
+            padding-left: 24px;
+          }
+        }
+      }
+      .news-lists-color-bar {
+        width: 100%;
+        height: 8px;
+        background: linear-gradient(90deg, rgba(80, 211, 206, 1) 0%, rgba(79, 169, 255, 1) 100%);
+      }
+    }
+  }
+}
+.news-lists-box {
+  width: 100%;
+  margin-bottom: 64px;
+  .news-lists-item {
+    width: 100%;
+    margin-top: 32px;
+    .lists-item-date {
+      width: 13%;
+      flex-shrink: 0;
+      padding: 14px 24px 14px 0;
+      border-right: 1px solid #acacac;
+
+      .date-day {
+        font-size: 56px;
+        font-weight: 600;
+        transform: translateX(-0.3em);
+        @extend .colors-words;
+      }
+      .month-year {
+        font-size: 16px;
+        font-weight: 600;
+        transform: translateX(-1em);
+        @extend .colors-words;
+      }
+    }
+    .lists-item-content {
+      flex-grow: 1;
+      padding: 12px 24px 12px 24px;
+      position: relative;
+      z-index: 1;
+      &::before {
+        content: "";
+        display: block;
+        width: 0;
+        height: 100%;
+        background-color: #f0f0f0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 0.4s ease-in;
+        z-index: -1;
+      }
+      &:hover::before {
+        width: 100%;
+      }
+      .item-content-title {
+        margin-bottom: 0.8em;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        h2 {
+          font-size: 20px;
+          color: #000;
+          @extend.normal-font-style500;
+        }
+      }
+
+      .lists-item-text {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        p {
+          font-size: 18px;
+          color: #000;
+          @extend.normal-font-style400;
+          line-height: 1.4;
+        }
+      }
+    }
+  }
+}
+.section-tennis-class {
+  overflow: hidden;
+  padding-bottom: 64px;
+  background: linear-gradient(0deg, rgba(228, 254, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  .tennis-class-carousel {
+    animation: tennis 20s linear infinite;
+    .tennis-class-pic {
+      flex-shrink: 0;
+      width: 823px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+//3卡片區
+.tennis-class-main {
+  width: 67.5%;
+  margin: auto;
+  padding-top: 96px;
+  z-index: 1;
+  .tennis-class-cards {
+    margin-bottom: 64px;
+    .tennis-cards-item {
+      gap: 24px;
+      width: 49%;
+      img {
+        width: 100%;
+      }
+    }
+    .tennis-cards-item-dubble {
+      width: 49%;
+      .tennis-cards-item {
+        width: 100%;
+      }
+    }
+  }
+}
+.tennis-coach-bg {
+  width: 20.3125vw; //390
+  min-width: 185px;
+  top: 58%;
+  right: -13%;
+  z-index: -1;
+  img {
+    width: 100%;
+    vertical-align: middle;
+  }
+}
+//教練各檔區
+.index-tennis-coach {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .tennis-coach-profile {
+    width: 45%;
+    h3 {
+      font-size: 44px;
+      color: #000000;
+      @extend .normal-font-style500;
+      margin-top: 38px;
+      margin-bottom: 1.09em;
+      span {
+        font-size: 24px;
+        color: #000000;
+        @extend .normal-font-style500;
+      }
+    }
+    .profile-title {
+      width: 80%;
+      & + .profile-title {
+        margin-top: 12px;
+      }
+      > span {
+        margin-bottom: 12px;
+        // margin: 12px 0;
+        display: block;
+        font-size: 20px;
+        color: #fff;
+        @extend .normal-font-style400;
+        padding: 0.5em 0.8em;
+        width: fit-content;
+        background: linear-gradient(0deg, rgba(10, 180, 200, 1) 0%, rgba(80, 211, 206, 1) 100%);
+        border-radius: 50px;
+      }
+      > ul {
+        > li {
+          font-size: 18px;
+          line-height: 1.4;
+          color: #000;
+          @extend .normal-font-style400;
+          display: flex;
+          align-items: start;
+          &::before {
+            content: "";
+            display: block;
+            width: 8px;
+            height: 8px;
+            background-color: #4fa9ff;
+            margin-right: 12px;
+            flex-shrink: 0;
+            transform: translateY(80%);
+          }
+          & + li {
+            margin-top: 16px;
+          }
+        }
+      }
+    }
+  }
+  .tennis-coach-pic {
+    width: 53%;
+    max-width: 526px;
+    align-self: center;
+    z-index: 1;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .section-index-about {
+    .index-about-title {
+      h2 {
+        font-size: 100px;
+        span {
+          font-size: 33px;
+          text-indent: 1.3em;
+        }
+      }
+    }
+    .index-about-main {
+      .index-about-content {
+        h1 {
+          font-size: 30px;
+        }
+        .index-about-text {
+          p {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+  //首頁背景圖 start
+  .index-about-bg {
+    .index-about-bg-pic {
+      position: absolute;
+      width: 14.89583vw; //286
+      min-width: 79px;
+      right: 0;
+      top: 150px;
+      z-index: -1;
+    }
+  }
+  .index-about-big-bg {
+    bottom: 100px;
+    left: 0;
+    width: 83.75vw;
+    min-width: 397px;
+  }
+  .index-about-bg-dotted {
+    position: absolute;
+    width: 16.25vw;
+    min-width: 200px;
+    right: 0;
+    top: 80%;
+    img {
+      width: 100%;
+    }
+  }
+  .index-news-bg-pic {
+    width: 16.25vw;
+    min-width: 200px;
+    left: 0;
+    top: 208px;
+    z-index: -1;
+  }
+  //首頁背景圖 end
+  .index-tennis-coach {
+    width: 82%;
+  }
+}
+@media (max-width: 1025px) {
+  .index-tennis-coach {
+    width: 82%;
+    .tennis-coach-profile {
+      width: 100%;
+      margin-bottom: 32px;
+    }
+    .tennis-coach-pic {
+      width: 100%;
+      align-self: center;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .section-index-about {
+    .index-about-title {
+      padding-top: 48px;
+      padding-bottom: 32px;
+      h2 {
+        font-size: 74px;
+        span {
+          font-size: 33px;
+          text-indent: 1.3em;
+        }
+      }
+    }
+    .index-about-main {
+      .index-about-pic {
+        width: 74%;
+      }
+      .index-about-content {
+        width: 83%;
+        margin: auto;
+        padding: 38px 0 0 0;
+        h1 {
+          font-size: 25px;
+        }
+        .index-about-text {
+          margin: 20px 0 38px;
+          p {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+  .section-index-news {
+    .index-news-main {
+      width: 82.608695%;
+      padding-bottom: 64px;
+      .index-news-title {
+        padding: 80px 0 64px;
+        span {
+          font-size: 44px;
+          display: block;
+          text-align: center;
+        }
+      }
+      .index-news-lists {
+        .news-lists-title {
+          display: flex;
+          align-items: center;
+          //日期 內容
+          .lists-title-item {
+            p {
+              font-size: 15px;
+              padding: 12px 0;
+            }
+            &:nth-child(1) {
+              width: 25%;
+            }
+            &:nth-child(2) {
+              //width: 20%;
+              flex-grow: 1;
+              padding-left: 18px;
+            }
+          }
+        }
+        .news-lists-color-bar {
+          width: 100%;
+          height: 8px;
+        }
+      }
+    }
+  }
+  .news-lists-box {
+    width: 100%;
+    margin-bottom: 48px;
+    .news-lists-item {
+      width: 100%;
+      margin-top: 32px;
+      .lists-item-date {
+        width: 25%;
+        flex-shrink: 0;
+        // padding: 14px 24px 14px 0;
+        padding: 0;
+        padding-right: 18px;
+        border-right: none;
+
+        .date-day {
+          font-size: 48px;
+          transform: translateX(0);
+        }
+        .month-year {
+          font-size: 13px;
+          transform: translateX(0);
+        }
+      }
+      .lists-item-content {
+        flex-grow: 1;
+        // padding: 12px 0 12px 24px;
+        padding: 0 0 0 18px;
+        border-left: 1px solid #acacac;
+        .item-content-title {
+          margin-bottom: 0.8em;
+          h2 {
+            font-size: 16px;
+          }
+        }
+
+        .lists-item-text {
+          -webkit-line-clamp: 3;
+          p {
+            font-size: 14px;
+            line-height: 1.4;
+          }
+        }
+      }
+    }
+  }
+  .know-more-btn {
+    font-size: 16px;
+  }
+  .tennis-class-main {
+    width: 82.608695%;
+    padding-top: 96px;
+    .tennis-class-cards {
+      margin-bottom: 24px;
+      .tennis-cards-item {
+        width: 100%;
+        margin-bottom: 16px;
+        img {
+          width: 100%;
+        }
+      }
+      .tennis-cards-item-dubble {
+        width: 100%;
+      }
+    }
+  }
+  .index-tennis-coach {
+    .tennis-coach-profile {
+      h3 {
+        font-size: 25px;
+        margin-top: 80px;
+        span {
+          font-size: 18px;
+        }
+      }
+      .profile-title {
+        width: 100%;
+        & + .profile-title {
+          margin-top: 24px;
+        }
+        > span {
+          margin-bottom: 12px;
+          font-size: 16px;
+        }
+        > ul {
+          > li {
+            font-size: 15px;
+            & + li {
+              margin-top: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .tennis-coach-bg {
+    width: 20.3125vw; //390
+    min-width: 185px;
+    top: 70%;
+    right: -13%;
+    z-index: -1;
+    img {
+      width: 100%;
+      vertical-align: middle;
+    }
+  }
+  .section-tennis-class {
+    padding-bottom: 47px;
+  }
+}
+
+@media (max-width: 400px) {
+  .index-about-big-bg {
+    width: 95.8937vw;
+    min-width: 350px;
+  }
+}
+@keyframes tennis {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}

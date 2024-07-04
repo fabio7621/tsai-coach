@@ -1,0 +1,8 @@
+網頁版 / 手機版
+https://www.figma.com/design/yTnDWndlaAfC989yrtVERM/%E8%94%A1%E6%95%99%E7%B7%B4%E7%B6%B2%E7%90%83-1130618?node-id=0-1&t=nSjjiORLJvjXPHnu-1
+
+英文字體
+https://fonts.google.com/specimen/Rubik?preview.layout=grid&query=Rubik
+
+中文字體
+https://fonts.google.com/noto/specimen/Noto+Sans+TC?query=noto+sans+tc

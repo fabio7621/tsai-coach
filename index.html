@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1,safari=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="蔡教練網球" />
+    <meta name="description" content="蔡教練網球" />
+    <title>蔡教練網球</title>
+    <!-- 字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet" />
+    <!-- shortcut icon -->
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <!-- ................ -->
+    <link rel="stylesheet" href="./stylesheet/scss/all.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <style>
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="main-header d-flex align-items-center justify-content-center">
+      <a href="./index.html" class="d-block section-topnav-logo">台南蔡教練網球培訓中心</a>
+
+      <!-- topNavbar -->
+      <section class="d-none d-md-none d-lg-flex section-topnav-box align-items-center">
+        <ul class="section-topnav d-flex align-items-center">
+          <li><a href="#">培訓中心簡介</a></li>
+          <li><a href="#">最新消息</a></li>
+          <li><a href="#">課程資訊</a></li>
+          <li><a href="#">場地資訊</a></li>
+          <li><a href="#">課程花絮</a></li>
+        </ul>
+        <button class="nav-singUp-btn position-relative">
+          立即報名
+          <div class="singUp-btn-pic position-absolute">
+            <img src="./src/web/icon/tennis.png" alt="網球" />
+          </div>
+        </button>
+        <div class="topNav-social">
+          <a target="_blank" href="#" class="topNav-social-item">
+            <img src="./src/web/icon/facebook.png" alt="fb" />
+          </a>
+          <a target="_blank" href="#" class="topNav-social-item">
+            <img src="./src/web/icon/instagram.png" alt="ig" />
+          </a>
+          <a target="_blank" href="#" class="topNav-social-item">
+            <img src="./src/web/icon/line.png" alt="line" />
+          </a>
+        </div>
+      </section>
+      <!-- hb -->
+      <div id="hb-btn" class="hb-btn-container d-block d-md-block d-lg-none ms-auto">
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" for="menu-toggle" onclick="toggleMenu()">
+          <div class="menu-button"></div>
+        </label>
+      </div>
+    </header>
+
+    <section class="section-index-banner">
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img class="w-100 d-none d-md-none d-lg-block" src="./src/web/index/banner.png" alt="banner" />
+            <img class="w-100 d-block d-md-block d-lg-none" src="./src/phone/index/banner.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img class="w-100 d-none d-md-none d-lg-block" src="./src/web/index/banner.png" alt="banner" />
+            <img class="w-100 d-block d-md-block d-lg-none" src="./src/phone/index/banner.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img class="w-100 d-none d-md-none d-lg-block" src="./src/web/index/banner.png" alt="banner" />
+            <img class="w-100 d-block d-md-block d-lg-none" src="./src/phone/index/banner.png" alt="" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <section class="section-index-about position-relative">
+      <div class="index-about-bg">
+        <!-- linebar -->
+        <div class="index-about-bg-pic">
+          <img class="d-none d-md-none d-lg-block" src="./src/web/icon/line-bg.png" alt="line-bg" />
+          <img class="d-block d-md-block d-lg-none" src="./src/phone/index/line-bg.png" alt="line-bg" />
+          <div class="index-about-bg-dotted d-none d-md-none d-lg-block">
+            <img src="./src/web/index/news-dots-right.png" alt="news-dots-right" />
+          </div>
+        </div>
+      </div>
+      <div class="index-about-title">
+        <h2>
+          TENNIS<br />
+          <span>TRAINING CENTER</span>
+        </h2>
+      </div>
+      <div class="index-about-main d-flex flex-wrap">
+        <div class="index-about-pic position-relative">
+          <img src="./src/web/index/about-img.png" alt="about picture" />
+          <!-- 背景大圖 -->
+          <div class="index-about-big-bg">
+            <img class="d-none d-md-none d-lg-block" src="./src/web/index/color-block-dots.png" alt="color-block-dots" />
+            <img class="d-block d-md-block d-lg-none" src="./src/phone/index/color-block.png" alt="color-block" />
+            <!-- 網球 -->
+            <div class="index-about-bg-tennis d-none d-md-none d-lg-block">
+              <img src="./src/web/icon/tennis.png" alt="tennis" />
+            </div>
+          </div>
+        </div>
+        <div class="index-about-content">
+          <h1>台南市第一首選<br />蔡教練網球培訓中心</h1>
+          <div class="index-about-text">
+            <p>
+              蔡教練於1993年退役後成立了蔡教練網球培訓中心，致力於在台南基層扎根，培育更多新秀，為台南發光發熱，並代表台灣征戰世界。身為土生土長的台南人，蔡教練充滿情感與熱誠，積極負責，懂得飲水思源，並勇於求新求變。他深入基層推廣網球，結合多元教學元素，讓學員更易理解且避免上課枯燥無聊，有效提升教學品質。
+              蔡教練曾在安平國中、安定國中、南科國小、億載國小、南新國小、歸仁國小及崑山國小擔任創隊教練，成功培養在地選手代表學校在各縣市比賽中獲得佳績。
+            </p>
+          </div>
+
+          <button class="know-more-btn mx-auto mx-md-0 me-md-auto" type="button">了解更多</button>
+        </div>
+      </div>
+    </section>
+    <section class="section-index-news position-relative">
+      <div class="section-index-news-bg">
+        <div class="index-news-bg-pic position-absolute d-none d-md-none d-lg-block">
+          <img src="./src/web/index/news-dots-left.png" alt="news-dots-left" />
+        </div>
+      </div>
+      <div class="index-news-main">
+        <div class="index-news-title">
+          <span>最新消息</span>
+        </div>
+        <div class="index-news-lists d-flex flex-column">
+          <div class="news-lists-title">
+            <div class="lists-title-item">
+              <p>日期</p>
+            </div>
+            <div class="lists-title-item">
+              <p>內容</p>
+            </div>
+          </div>
+          <div class="news-lists-color-bar"></div>
+          <div class="news-lists-box">
+            <div class="news-lists-item d-flex align-items-center">
+              <div class="lists-item-date d-flex flex-column align-items-center">
+                <div class="date-day">20</div>
+                <div class="month-year">MAY 2024</div>
+              </div>
+              <div class="lists-item-content">
+                <div class="item-content-title">
+                  <h2>網球夏令營/暑期營-預約報名中</h2>
+                </div>
+                <div class="lists-item-text">
+                  <p>
+                    專為青少年/兒童設計的網球訓練營，藉由有趣的課程安排，讓學員在寒假期間學習的扎實網球技能，同時培養團隊精神與自信心，讓學員擁有一個快樂的假期。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="news-lists-item d-flex align-items-center">
+              <div class="lists-item-date d-flex flex-column align-items-center">
+                <div class="date-day">20</div>
+                <div class="month-year">MAY 2024</div>
+              </div>
+              <div class="lists-item-content">
+                <div class="item-content-title">
+                  <h2>網球夏令營/暑期營-預約報名中</h2>
+                </div>
+                <div class="lists-item-text">
+                  <p>
+                    專為青少年/兒童設計的網球訓練營，藉由有趣的課程安排，讓學員在寒假期間學習的扎實網球技能，同時培養團隊精神與自信心，讓學員擁有一個快樂的假期。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="news-lists-item d-flex align-items-center">
+              <div class="lists-item-date d-flex flex-column align-items-center">
+                <div class="date-day">20</div>
+                <div class="month-year">MAY 2024</div>
+              </div>
+              <div class="lists-item-content">
+                <div class="item-content-title">
+                  <h2>網球夏令營/暑期營-預約報名中</h2>
+                </div>
+                <div class="lists-item-text">
+                  <p>
+                    專為青少年/兒童設計的網球訓練營，藉由有趣的課程安排，讓學員在寒假期間學習的扎實網球技能，同時培養團隊精神與自信心，讓學員擁有一個快樂的假期。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="news-lists-item d-flex align-items-center">
+              <div class="lists-item-date d-flex flex-column align-items-center">
+                <div class="date-day">20</div>
+                <div class="month-year">MAY 2024</div>
+              </div>
+              <div class="lists-item-content">
+                <div class="item-content-title">
+                  <h2>網球夏令營/暑期營-預約報名中</h2>
+                </div>
+                <div class="lists-item-text">
+                  <p>
+                    專為青少年/兒童設計的網球訓練營，藉由有趣的課程安排，讓學員在寒假期間學習的扎實網球技能，同時培養團隊精神與自信心，讓學員擁有一個快樂的假期。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="know-more-btn mx-auto" type="button">了解更多</button>
+        </div>
+      </div>
+    </section>
+    <section class="section-tennis-class">
+      <div class="d-flex align-items-center">
+        <div class="tennis-class-carousel d-flex align-items-center">
+          <div class="tennis-class-pic">
+            <img src="./src/web/index/marquee.png" alt="carousel" />
+          </div>
+          <div class="tennis-class-pic">
+            <img src="./src/web/index/marquee.png" alt="carousel" />
+          </div>
+          <div class="tennis-class-pic">
+            <img src="./src/web/index/marquee.png" alt="carousel" />
+          </div>
+          <div class="tennis-class-pic">
+            <img src="./src/web/index/marquee.png" alt="carousel" />
+          </div>
+        </div>
+        <div class="tennis-class-carousel d-flex align-items-center">
+          <div class="tennis-class-pic">
+            <img src="./src/web/index/marquee.png" alt="carousel" />
+          </div>
+          <div class="tennis-class-pic">
+            <img src="./src/web/index/marquee.png" alt="carousel" />
+          </div>
+          <div class="tennis-class-pic">
+            <img src="./src/web/index/marquee.png" alt="carousel" />
+          </div>
+          <div class="tennis-class-pic">
+            <img src="./src/web/index/marquee.png" alt="carousel" />
+          </div>
+        </div>
+      </div>
+      <div class="tennis-class-main d-flex flex-column position-relative">
+        <div class="tennis-class-cards d-flex flex-wrap justify-content-between">
+          <div class="tennis-cards-item-dubble d-flex flex-column justify-content-between">
+            <div class="tennis-cards-item">
+              <img src="./src/web/index/class-p.png" alt="class-p" />
+            </div>
+            <div class="tennis-cards-item">
+              <img src="./src/web/index/class-g.png" alt="class-g" />
+            </div>
+          </div>
+          <div class="tennis-cards-item">
+            <img src="./src/web/index/class-c.png" alt="class-c" />
+          </div>
+          <div class="tennis-coach-bg position-absolute">
+            <img class="d-none d-md-none d-lg-block" src="./src/web/index/class-dots.png" alt="class-dots" />
+            <img class="d-block d-md-block d-lg-none" src="./src/phone/index/dots.png" alt="class-dots" />
+          </div>
+        </div>
+        <button class="know-more-btn mx-auto" type="button">了解更多</button>
+      </div>
+      <div class="index-tennis-coach">
+        <nav class="tennis-coach-profile">
+          <h3>蔡政翰&nbsp;<span>總教練</span></h3>
+          <ul>
+            <li class="profile-title">
+              <span>最高學歷</span>
+              <ul>
+                <li>台北體育學院-網球專長</li>
+              </ul>
+            </li>
+            <li class="profile-title">
+              <span>教學年資</span>
+              <ul>
+                <li>21年</li>
+              </ul>
+            </li>
+            <li class="profile-title">
+              <span>專業證照</span>
+              <ul>
+                <li>中華民國網球協會(B級教練)</li>
+              </ul>
+            </li>
+            <li class="profile-title">
+              <span>個人成績</span>
+              <ul>
+                <li>青少年個人單打季軍</li>
+                <li>全國網球排名前八</li>
+                <li>代表南台科技大學南區單打冠軍 雙打冠軍</li>
+                <li>全國立法院長盃單、雙打冠軍</li>
+                <li>ITF國際富興盃單打亞軍</li>
+                <li>全國宏凱盃單打冠軍、雙打冠軍</li>
+              </ul>
+            </li>
+            <li class="profile-title">
+              <span>目前擔任</span>
+              <ul>
+                <li>台南市網球委員會副總幹事</li>
+                <li>YONEX贊助簽約教練</li>
+                <li>台南市崑山國小網球隊指導教練</li>
+                <li>台南市歸仁國小網球隊指導教練</li>
+                <li>台南市大灣國小迷你網球指導教練</li>
+                <li>台南市永康國小迷你網球指導教練</li>
+                <li>台南市永信國小迷你網球指導教練</li>
+                <li>台南市歸仁網球俱樂部總教練</li>
+                <li>台南市忠孝依默網球俱樂部教練</li>
+                <li>台南市東寧網球場教練</li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="tennis-coach-pic">
+          <img src="./src/web/index/coach-tsai.png" alt="coach-tsai" />
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="footer-content">
+        <div class="footer-content-top d-flex flex-wrap align-items-center">
+          <a class="footer-brand-text" href="./index.html">台南蔡教練網球培訓中心</a>
+          <nav class="footer-nav">
+            <ul class="d-flex flex-wrap align-items-center">
+              <li><a href="javascript:void(0)">培訓中心簡介</a></li>
+              <li><a href="javascript:void(0)">最新消息</a></li>
+              <li><a href="javascript:void(0)">課程資訊</a></li>
+              <li><a href="javascript:void(0)">場地資訊</a></li>
+              <li><a href="javascript:void(0)">課程花絮</a></li>
+              <li><a href="javascript:void(0)">網站導覽</a></li>
+            </ul>
+          </nav>
+          <button class="nav-singUp-btn position-relative">
+            立即報名
+            <div class="singUp-btn-pic position-absolute">
+              <img src="./src/web/icon/tennis.png" alt="網球" />
+            </div>
+          </button>
+        </div>
+        <div class="footer-content-bottem">
+          <ul>
+            <li>
+              <a href="javascript:void(0)">電話：0933665944</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">地址：台南市安南區安中路一段622巷60號</a>
+            </li>
+          </ul>
+          <p>
+            <span>Copyright 2024</span>&copy;台南市蔡教練網球培訓中心
+            <a
+              class="renu-http"
+              href="https://www.renu.com.tw/
+          "
+              >Designed By RENU
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- sidebar gotop button -->
+    <div class="side-bar-items flex-column d-none d-md-flex">
+      <div class="side-item" id="scrollBtn">
+        <img src="./src/web/icon/top.png" alt="gotop" />
+      </div>
+    </div>
+    <!-- 手機板menu選單-->
+    <div id="sidebar" class="d-flex d-md-flex d-lg-none phone-menu" style>
+      <ul class="d-flex flex-column">
+        <li>
+          <a href="about.html">培訓中心簡介</a>
+        </li>
+        <li>
+          <a href="./news.html">最新消息</a>
+        </li>
+        <li>
+          <a href="./work.html">課程資訊</a>
+        </li>
+        <li>
+          <a href="./contact.html">場地資訊</a>
+        </li>
+        <li>
+          <a href="./sitemap.html">課程花絮</a>
+        </li>
+      </ul>
+      <button class="nav-singUp-btn position-relative">
+        立即報名
+        <div class="singUp-btn-pic position-absolute">
+          <img src="./src/web/icon/tennis.png" alt="網球" />
+        </div>
+      </button>
+      <div class="topNav-social">
+        <a target="_blank" href="#" class="topNav-social-item">
+          <img src="./src/web/icon/facebook.png" alt="fb" />
+        </a>
+        <a target="_blank" href="#" class="topNav-social-item">
+          <img src="./src/web/icon/instagram.png" alt="ig" />
+        </a>
+        <a target="_blank" href="#" class="topNav-social-item">
+          <img src="./src/web/icon/line.png" alt="line" />
+        </a>
+      </div>
+    </div>
+    <script src="./js/controller.js"></script>
+    <script src="./js/scroll-top.js"></script>
+    <!-- bs -->
+    <script src="./js/bootstrap.bundle.js"></script>
+
+    <!-- swiper -->
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 20000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1,safari=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="蔡教練網球" />
+    <meta name="description" content="蔡教練網球" />
+    <title>蔡教練網球</title>
+    <!-- 字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet" />
+    <!-- shortcut icon -->
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <!-- ................ -->
+    <link rel="stylesheet" href="./stylesheet/scss/all.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  </head>
+
+  <body>
+    <header class="main-header d-flex align-items-center justify-content-center">
+      <a href="./index.html" class="d-block section-topnav-logo">台南蔡教練網球培訓中心</a>
+
+      <!-- topNavbar -->
+      <section class="d-none d-md-none d-lg-flex section-topnav-box align-items-center">
+        <ul class="section-topnav d-flex align-items-center">
+          <li><a href="#">培訓中心簡介</a></li>
+          <li><a href="#">最新消息</a></li>
+          <li><a href="#">課程資訊</a></li>
+          <li><a href="#">場地資訊</a></li>
+          <li><a href="#">課程花絮</a></li>
+        </ul>
+        <button class="nav-singUp-btn position-relative">
+          立即報名
+          <div class="singUp-btn-pic position-absolute">
+            <img src="./src/web/icon/tennis.png" alt="網球" />
+          </div>
+        </button>
+        <div class="topNav-social">
+          <a target="_blank" href="#" class="topNav-social-item">
+            <img src="./src/web/icon/facebook.png" alt="fb" />
+          </a>
+          <a target="_blank" href="#" class="topNav-social-item">
+            <img src="./src/web/icon/instagram.png" alt="ig" />
+          </a>
+          <a target="_blank" href="#" class="topNav-social-item">
+            <img src="./src/web/icon/line.png" alt="line" />
+          </a>
+        </div>
+      </section>
+      <!-- hb -->
+      <div id="hb-btn" class="hb-btn-container d-block d-md-block d-lg-none ms-auto">
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" for="menu-toggle" onclick="toggleMenu()">
+          <div class="menu-button"></div>
+        </label>
+      </div>
+    </header>
+    <section class="section-pages-banner">
+      <img class="d-none d-md-none d-lg-block" src="./src/web/about/about-banner.png" alt="about-banner" />
+      <img class="d-block d-md-block d-lg-none" src="./src/phone/about/about-banner.png" alt="about-banner" />
+    </section>
+    <main class="pages-main-content position-relative">
+      <!-- bg-pic -->
+      <div class="pages-bg-pics-item d-none d-md-none d-lg-block">
+        <img src="./src/web/icon/color-block.png" alt="color-block" />
+        <div class="pages-bg-dotted">
+          <img src="./src/web/icon/dots.png" alt="dots" />
+        </div>
+      </div>
+      <div class="pages-bg-pics-item-phone d-block d-md-block d-lg-none">
+        <img src="./src/phone/icon/color-block-dots.png" alt="color-block" />
+      </div>
+      <!-- bg-pic end -->
+      <section class="section-pages-bread">
+        <nav class="pages-bread-main">
+          <ol class="pages-bread-lists d-flex align-items-center flex-wrap">
+            <li><a href="javascript:void(0)">首頁</a></li>
+            <li><i class="bi bi-chevron-right"></i></li>
+            <li><a href="javascript:void(0)">培訓中心簡介</a></li>
+            <li><i class="bi bi-chevron-right"></i></li>
+            <li><a href="javascript:void(0)">師資介紹</a></li>
+          </ol>
+        </nav>
+      </section>
+
+      <section class="section-about-main container-fluid">
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="section-about-side">
+              <h3>培訓中心簡介</h3>
+              <!-- PC -->
+              <div class="side-web-items d-none d-md-none d-lg-flex">
+                <button type="button" class="side-web-btn">培訓中心簡介</button>
+                <button type="button" class="side-web-btn">師資介紹</button>
+              </div>
+              <!-- Phone -->
+              <div class="phone-menu-box w-100 d-block d-md-block d-lg-none">
+                <div class="phone-menu-title">
+                  <p>
+                    分類選單
+                    <i class="bi bi-chevron-down"></i>
+                  </p>
+                  <div class="phone-munu-content">
+                    <ul>
+                      <li>
+                        <a href="javascript:void(0)">培訓中心簡介</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">師資介紹</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">師資介紹1</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-8">
+            <div class="section-about-content position-relative">
+              <!-- bg-pic -->
+              <div class="content-bg-pic d-none d-md-none d-lg-block">
+                <img src="./src/web/about/dots.png" alt="dots" />
+              </div>
+              <!-- bg-pic end -->
+              <div class="about-coach-profiles">
+                <div class="coach-profiles-item">
+                  <div class="coach-profiles-pic">
+                    <img src="./src/web/about/coach-tsai.png" alt="coach-tsai" />
+                  </div>
+                  <div class="coach-profiles-content d-flex flex-column">
+                    <h2>蔡政翰 <span>總教練</span></h2>
+                    <ul class="coach-profile-list">
+                      <li>最高學歷：台北體育學院-網球專長</li>
+                      <li>教學年資：21年</li>
+                      <li>代表南台科技大學南區單打冠軍 雙打冠軍</li>
+                      <li>
+                        全國立法院長盃單、雙打冠軍
+                        <ul class="coach-profile-rank d-flex flex-column">
+                          <li>青少年個人單打季軍</li>
+                          <li>全國網球排名前八</li>
+                          <li>代表南台科技大學南區單打冠軍 雙打冠軍</li>
+                          <li>全國立法院長盃單、雙打冠軍</li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <button class="more-detail" type="button">詳細介紹</button>
+                  </div>
+                </div>
+                <div class="coach-profiles-item">
+                  <div class="coach-profiles-pic">
+                    <img src="./src/web/about/coach-lee.png" alt="coach-tsai" />
+                  </div>
+                  <div class="coach-profiles-content d-flex flex-column">
+                    <h2>李沛億 <span>網球教練</span></h2>
+                    <ul class="coach-profile-list">
+                      <li>最高學歷：國立高雄師範大學碩士</li>
+                      <li>教學年資：22年</li>
+                      <li>專業證照：中華民國網球協會(B級教練)</li>
+                      <li>
+                        全國立法院長盃單、雙打冠軍
+                        <ul class="coach-profile-rank d-flex flex-column">
+                          <li>全國大專杯甲組雙打第四名</li>
+                          <li>全部大專盃團體賽第四名</li>
+                          <li>彰化縣全運會代表隊</li>
+                          <li>ITF3級國際網球錦標賽雙打冠軍</li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <button class="more-detail" type="button">詳細介紹</button>
+                  </div>
+                </div>
+                <div class="coach-profiles-item">
+                  <div class="coach-profiles-pic">
+                    <img src="./src/web/about/coach-yong.png" alt="coach-tsai" />
+                  </div>
+                  <div class="coach-profiles-content d-flex flex-column">
+                    <h2>楊坤橙 <span>網球教練</span></h2>
+                    <ul class="coach-profile-list">
+                      <li>教學年資：6年</li>
+                      <li>
+                        個人成績：
+                        <ul class="coach-profile-rank d-flex flex-column">
+                          <li>楊悰勝：全國12歲男子組排名12 最佳成績：B級單打季軍、雙打亞軍 C級單打亞軍、雙打冠軍</li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <button class="more-detail" type="button">詳細介紹</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="footer-content">
+        <div class="footer-content-top d-flex flex-wrap align-items-center">
+          <a class="footer-brand-text" href="./index.html">台南蔡教練網球培訓中心</a>
+          <nav class="footer-nav">
+            <ul class="d-flex flex-wrap align-items-center">
+              <li><a href="javascript:void(0)">培訓中心簡介</a></li>
+              <li><a href="javascript:void(0)">最新消息</a></li>
+              <li><a href="javascript:void(0)">課程資訊</a></li>
+              <li><a href="javascript:void(0)">場地資訊</a></li>
+              <li><a href="javascript:void(0)">課程花絮</a></li>
+              <li><a href="javascript:void(0)">網站導覽</a></li>
+            </ul>
+          </nav>
+          <button class="nav-singUp-btn position-relative">
+            立即報名
+            <div class="singUp-btn-pic position-absolute">
+              <img src="./src/web/icon/tennis.png" alt="網球" />
+            </div>
+          </button>
+        </div>
+        <div class="footer-content-bottem">
+          <ul>
+            <li>
+              <a href="javascript:void(0)">電話：0933665944</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">地址：台南市安南區安中路一段622巷60號</a>
+            </li>
+          </ul>
+          <p>
+            <span>Copyright 2024</span>&copy;台南市蔡教練網球培訓中心
+            <a
+              class="renu-http"
+              href="https://www.renu.com.tw/
+          "
+              >Designed By RENU
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- sidebar gotop button -->
+    <div class="side-bar-items flex-column d-none d-md-flex">
+      <div class="side-item" id="scrollBtn">
+        <img src="./src/web/icon/top.png" alt="gotop" />
+      </div>
+    </div>
+    <!-- 手機板menu選單-->
+    <div id="sidebar" class="d-flex d-md-flex d-lg-none phone-menu" style>
+      <ul class="d-flex flex-column">
+        <li>
+          <a href="about.html">培訓中心簡介</a>
+        </li>
+        <li>
+          <a href="./news.html">最新消息</a>
+        </li>
+        <li>
+          <a href="./work.html">課程資訊</a>
+        </li>
+        <li>
+          <a href="./contact.html">場地資訊</a>
+        </li>
+        <li>
+          <a href="./sitemap.html">課程花絮</a>
+        </li>
+      </ul>
+      <button class="nav-singUp-btn position-relative">
+        立即報名
+        <div class="singUp-btn-pic position-absolute">
+          <img src="./src/web/icon/tennis.png" alt="網球" />
+        </div>
+      </button>
+      <div class="topNav-social">
+        <a target="_blank" href="#" class="topNav-social-item">
+          <img src="./src/web/icon/facebook.png" alt="fb" />
+        </a>
+        <a target="_blank" href="#" class="topNav-social-item">
+          <img src="./src/web/icon/instagram.png" alt="ig" />
+        </a>
+        <a target="_blank" href="#" class="topNav-social-item">
+          <img src="./src/web/icon/line.png" alt="line" />
+        </a>
+      </div>
+    </div>
+    <script src="./js/controller.js"></script>
+    <script src="./js/scroll-top.js"></script>
+    <!-- bs -->
+    <script src="./js/bootstrap.bundle.js"></script>
+
+    <!-- swiper -->
+    <script src="./js/swiper-bundle.min.js"></script>
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  </body>
+</html>

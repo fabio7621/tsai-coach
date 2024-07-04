@@ -1,0 +1,166 @@
+.main-header {
+  width: 100%;
+  padding: 43px 0;
+  border-radius: 0 0 100px 100px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.section-topnav-logo {
+  text-decoration: none;
+  color: #0ab4c8;
+  font-size: 35px;
+  @extend .normal-font-style500;
+}
+.section-topnav {
+  margin: 0 23px;
+  > li {
+    &:hover a {
+      color: #fff;
+      background: linear-gradient(0deg, rgba(79, 169, 255, 1) 0%, rgba(80, 211, 206, 1) 100%);
+    }
+    & + li {
+      margin-left: 2px;
+    }
+    a {
+      color: #0ab4c8;
+      font-size: 18px;
+      padding: 3.5px 12px;
+      text-decoration: none;
+      @extend .normal-font-style500;
+      border-radius: 50px;
+    }
+  }
+}
+.nav-singUp-btn {
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  padding: 0.73em 4.5em 0.73em 0.9em;
+  @extend .normal-font-style500;
+  border-radius: 50px;
+  background: linear-gradient(0deg, rgba(79, 169, 255, 1) 0%, rgba(80, 211, 206, 1) 100%);
+  .singUp-btn-pic {
+    width: 57.5px;
+    right: 20px;
+    top: 0;
+    transform: translateY(-25%);
+    img {
+      width: 100%;
+      vertical-align: middle;
+    }
+  }
+}
+.topNav-social {
+  display: flex;
+  align-items: center;
+  margin-left: 21px;
+  .topNav-social-item {
+    width: 27px;
+    img {
+      width: 100%;
+    }
+    & + .topNav-social-item {
+      margin-left: 1rem;
+    }
+    &:first-child {
+      width: 22.68px;
+    }
+  }
+}
+.phone-menu {
+  flex-direction: column;
+  padding-top: 136px;
+  padding-bottom: 48px;
+  border-radius: 0 0 60px 60px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  position: fixed;
+  top: -481px;
+  left: 0;
+  height: 481px;
+  width: 100%;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+  overflow-y: auto;
+  z-index: 1000;
+  &.open {
+    transform: translateY(100%);
+  }
+  ul {
+    width: fit-content;
+    margin: auto;
+    align-items: center;
+    li {
+      a {
+        text-decoration: none;
+        color: #0ab4c8;
+        font-size: 16px;
+        @extend .normal-font-style500;
+        text-align: center;
+      }
+      & + li {
+        margin-top: 24px;
+      }
+    }
+  }
+  > .nav-singUp-btn {
+    width: fit-content;
+    margin: auto;
+    margin-top: 41px;
+    font-size: 18px;
+    .singUp-btn-pic {
+      width: 54.75px;
+    }
+  }
+  > .topNav-social {
+    width: fit-content;
+    margin: auto;
+    margin-top: 24px;
+  }
+}
+@media (max-width: 1500px) {
+  .section-topnav-logo {
+    font-size: 25px;
+  }
+
+  .section-topnav {
+    margin: 0 15px;
+    > li {
+      a {
+        font-size: 15px;
+      }
+    }
+  }
+  .nav-singUp-btn {
+    font-size: 14px;
+    .singUp-btn-pic {
+      width: 40px;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .section-topnav-logo {
+    font-size: 18px;
+  }
+  .section-topnav {
+    > li {
+      a {
+        font-size: 13px;
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .main-header {
+    width: 100%;
+    padding: 24px 36px;
+    border-radius: 0 0 60px 60px;
+    z-index: 9999;
+  }
+  .section-topnav-logo {
+    font-size: 20px;
+  }
+}

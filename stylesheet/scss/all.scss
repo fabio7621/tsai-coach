@@ -1,0 +1,183 @@
+@import "../bootstrap.css";
+@import "../fancybox.css";
+@import "../swiper-bundle.min.css";
+@import "../owl.carousel.min.css";
+@import "../owl.theme.default.css";
+@import "../reset.css";
+
+//main css
+@import "./navbar";
+@import "./footer";
+@import "./index";
+@import "./about";
+@import "./news";
+@import "./news-inner";
+@import "./class-list";
+@import "./place";
+@import "./class-history";
+@import "./contact";
+@import "./sitemap";
+body {
+  font-family: "Rubik", sans-serif, "Noto Sans TC", sans-serif;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+/* hb.icon */
+.menu-button-container {
+  display: none;
+  width: 56px;
+  height: 40px;
+  background: linear-gradient(0deg, rgba(79, 169, 255, 1) 0%, rgba(80, 211, 206, 1) 100%);
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 50px;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  position: absolute;
+  height: 2px;
+  width: 24px;
+  border-radius: 3px;
+  transition: 0.3s ease-in-out;
+
+  &::before,
+  &::after {
+    content: "";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    position: absolute;
+    height: 2px;
+    width: 24px;
+    border-radius: 3px;
+    transition: 0.3s ease-in-out;
+  }
+
+  &::before {
+    margin-top: -6px;
+  }
+
+  &::after {
+    margin-top: 6px;
+    width: 100%;
+  }
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(45deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-45deg);
+}
+.menu-button-container .menu-button {
+  background: #fff(255, 93, 93);
+}
+
+//漸層字樣
+.colors-words {
+  background: linear-gradient(0deg, rgb(10, 180, 200) 0%, rgb(80, 211, 206) 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* FOR漢堡圖示show/hide */
+@media (max-width: 992px) {
+  .menu-button-container {
+    display: flex;
+  }
+}
+.hb-btn-container {
+  width: 44.5px;
+  height: 44.5px;
+  background-image: url(../../src/web/icon/menu.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.sr-only {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+}
+.normal-font-style400 {
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+.normal-font-style500 {
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+.normal-font-style600 {
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+.normal-font-style700 {
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+.normal-font-style800 {
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+.hover-white-bg {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    background-color: #fff;
+    opacity: 0;
+    transition: 0.5s ease 0.2s;
+  }
+  &:hover::after {
+    opacity: 0.5;
+  }
+}
+.hover-black-bg {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    background-color: #000;
+    opacity: 0;
+    transition: 0.5s ease 0.2s;
+  }
+  &:hover::after {
+    opacity: 0.3;
+  }
+}
+.modal-content {
+  border: none;
+}
+input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
