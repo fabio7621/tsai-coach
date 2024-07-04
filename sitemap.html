@@ -151,12 +151,30 @@
               </h2>
               <div id="collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionMap"></div>
             </div>
+
             <div class="accordion-item rounded-0">
               <h2 class="accordion-header">
-                <a href="./class-highlights.html" class="accordion-button site-mapitem collapsed" type="button">課程花絮</a>
+                <a
+                  href="javascript:;"
+                  class="accordion-button site-mapitem collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseSteven"
+                  aria-expanded="false"
+                  aria-controls="collapseSteven"
+                >
+                  課程花絮
+                </a>
               </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionMap"></div>
+              <div id="collapseSteven" class="accordion-collapse collapse" data-bs-parent="#accordionMap">
+                <div class="accordion-body p-0 d-flex flex-column">
+                  <a href="./class-highlights.html" class="site-mapitem-child w-100">花絮1</a>
+                  <a href="./product.html" class="site-mapitem-child w-100">花絮1</a>
+                  <a href="./product.html" class="site-mapitem-child w-100">花絮1</a>
+                </div>
+              </div>
             </div>
+
             <div class="accordion-item rounded-0">
               <h2 class="accordion-header">
                 <a href="./contact.html" class="w-100 site-mapitem collapsed" type="button">立即報名</a>
@@ -232,7 +250,7 @@
           <a href="./contact.html">場地資訊</a>
         </li>
         <li>
-          <a href="./sitemap.html">課程花絮</a>
+          <a href="./class-highlights.html">課程花絮</a>
         </li>
       </ul>
       <button class="nav-singUp-btn position-relative" onclick="window.location.href='./contact.html'">

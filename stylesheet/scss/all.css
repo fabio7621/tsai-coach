@@ -646,7 +646,7 @@
   flex-wrap: wrap;
 }
 .index-tennis-coach .tennis-coach-profile {
-  width: 45%;
+  width: 48%;
 }
 .index-tennis-coach .tennis-coach-profile h3 {
   font-size: 44px;
@@ -693,10 +693,10 @@
   transform: translateY(80%);
 }
 .index-tennis-coach .tennis-coach-profile .profile-title > ul > li + li {
-  margin-top: 16px;
+  margin-top: 4px;
 }
 .index-tennis-coach .tennis-coach-pic {
-  width: 53%;
+  width: 51%;
   max-width: 526px;
   align-self: center;
   z-index: 1;
@@ -994,7 +994,7 @@
 .section-about-main .section-about-side .side-web-items {
   width: -moz-fit-content;
   width: fit-content;
-  margin: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1015,7 +1015,7 @@
   background: #50d3ce;
 }
 .section-about-main .section-about-content {
-  width: 77.934272%;
+  width: 78%;
   padding-bottom: 64px;
 }
 .section-about-main .section-about-content h1 {
@@ -1192,12 +1192,13 @@
 .coach-profiles-item .coach-profile-list li {
   font-size: 18px;
   color: #000;
+  line-height: 1.2;
 }
 .coach-profiles-item .coach-profile-list li + li {
-  margin-top: 16px;
+  margin-top: 10px;
 }
 .coach-profiles-item .coach-profile-list li .coach-profile-rank {
-  margin-top: 16px;
+  margin-top: 10px;
 }
 .coach-profiles-item .coach-profile-list li .coach-profile-rank li {
   font-size: 18px;
@@ -1233,7 +1234,8 @@
 }
 
 .coach-profiles-content {
-  width: 33%;
+  width: 0;
+  flex-grow: 1;
 }
 
 .about-content-btn {
@@ -2171,6 +2173,7 @@
 .section-siteMap .section-siteMap-main {
   width: 70.833%;
   margin: auto;
+  filter: blur(0);
 }
 .section-siteMap .section-siteMap-main .accordion {
   --bs-accordion-bg: rgb(245, 245, 245);
@@ -2306,7 +2309,7 @@ body {
 }
 
 .colors-words, .news-lists-box .news-lists-item .lists-item-date .date-day, .news-lists-box .news-lists-item .lists-item-date .month-year, .news-item-card .news-item .news-item-date {
-  background: linear-gradient(0deg, rgb(10, 180, 200) 0%, rgb(80, 211, 206) 100%);
+  background: linear-gradient(180deg, #50d3ce 0%, #4fa9ff 100%);
   -webkit-background-clip: text;
   color: transparent;
 }

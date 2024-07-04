@@ -351,7 +351,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   .tennis-coach-profile {
-    width: 45%;
+    width: 48%;
     h3 {
       font-size: 44px;
       color: #000000;
@@ -400,14 +400,14 @@
             transform: translateY(80%);
           }
           & + li {
-            margin-top: 16px;
+            margin-top: 4px;
           }
         }
       }
     }
   }
   .tennis-coach-pic {
-    width: 53%;
+    width: 51%;
     max-width: 526px;
     align-self: center;
     z-index: 1;

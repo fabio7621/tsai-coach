@@ -44,7 +44,7 @@
     }
     .side-web-items {
       width: fit-content;
-      margin: auto;
+      margin-right: auto;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -66,7 +66,7 @@
     }
   }
   .section-about-content {
-    width: 77.934272%;
+    width: 78%;
     padding-bottom: 64px;
     h1 {
       font-size: 44px;
@@ -244,13 +244,14 @@
     li {
       font-size: 18px;
       color: #000;
+      line-height: 1.2;
       @extend .normal-font-style400;
       & + li {
-        margin-top: 16px;
+        margin-top: 10px;
       }
 
       .coach-profile-rank {
-        margin-top: 16px;
+        margin-top: 10px;
         li {
           font-size: 18px;
           color: #000;
@@ -285,10 +286,12 @@
   background: linear-gradient(180deg, #50d3ce 0%, #4fa9ff 100%);
   border-radius: 50px;
   border: none;
+  // margin-top: 41px;
   @extend .normal-font-style500;
 }
 .coach-profiles-content {
-  width: 33%;
+  width: 0;
+  flex-grow: 1;
 }
 .about-content-btn {
   font-size: 20px;
