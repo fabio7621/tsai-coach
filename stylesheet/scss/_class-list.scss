@@ -152,6 +152,7 @@
     width: 48.8847%;
     display: flex;
     aspect-ratio: 524/226;
+    @extend .hover-white-bg;
     &:nth-child(1) {
       background-image: url(../../src/web/contact/contact-img.png);
     }

@@ -505,7 +505,7 @@
   margin-top: 32px;
 }
 .news-lists-box .news-lists-item .lists-item-date {
-  width: 13%;
+  width: 10%;
   flex-shrink: 0;
   padding: 14px 24px 14px 0;
   border-right: 1px solid #acacac;
@@ -513,12 +513,10 @@
 .news-lists-box .news-lists-item .lists-item-date .date-day {
   font-size: 56px;
   font-weight: 600;
-  transform: translateX(-0.3em);
 }
 .news-lists-box .news-lists-item .lists-item-date .month-year {
   font-size: 16px;
   font-weight: 600;
-  transform: translateX(-1em);
 }
 .news-lists-box .news-lists-item .lists-item-content {
   flex-grow: 1;
@@ -1445,6 +1443,11 @@
 .pages-pagination .pagination-btns .pagination-item + .pagination-item {
   margin-left: 1rem;
 }
+.pages-pagination .pagination-btns .pagination-item:hover {
+  background-color: #4fa9ff;
+  color: #fff;
+  border: 1px solid #4fa9ff;
+}
 .pages-pagination .pages-select label {
   font-size: 20px;
   color: #000;
@@ -2355,10 +2358,10 @@ body {
   letter-spacing: 0.05em;
 }
 
-.hover-white-bg {
+.hover-white-bg, .class-contact-items .class-contact-item {
   position: relative;
 }
-.hover-white-bg::after {
+.hover-white-bg::after, .class-contact-items .class-contact-item::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -2368,8 +2371,8 @@ body {
   opacity: 0;
   transition: 0.5s ease 0.2s;
 }
-.hover-white-bg:hover::after {
-  opacity: 0.5;
+.hover-white-bg:hover::after, .class-contact-items .class-contact-item:hover::after {
+  opacity: 0.3;
 }
 
 .hover-black-bg, .news-item-card .news-item-pic {

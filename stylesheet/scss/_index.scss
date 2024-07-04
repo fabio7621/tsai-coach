@@ -201,7 +201,7 @@
     width: 100%;
     margin-top: 32px;
     .lists-item-date {
-      width: 13%;
+      width: 10%;
       flex-shrink: 0;
       padding: 14px 24px 14px 0;
       border-right: 1px solid #acacac;
@@ -209,13 +209,13 @@
       .date-day {
         font-size: 56px;
         font-weight: 600;
-        transform: translateX(-0.3em);
+        //transform: translateX(-0.3em);
         @extend .colors-words;
       }
       .month-year {
         font-size: 16px;
         font-weight: 600;
-        transform: translateX(-1em);
+        //transform: translateX(-1em);
         @extend .colors-words;
       }
     }
