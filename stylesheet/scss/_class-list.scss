@@ -187,15 +187,18 @@
   min-width: 200px;
   img {
     width: 100%;
+    vertical-align: middle;
   }
   .inner-colorbar-dotted {
     top: 0;
     right: 0;
     width: 16.71875vw;
     min-width: 200px;
-    transform: translateY(-18%);
+    transform: translateY(73%);
+    position: absolute;
     img {
       width: 100%;
+      vertical-align: middle;
     }
   }
 }

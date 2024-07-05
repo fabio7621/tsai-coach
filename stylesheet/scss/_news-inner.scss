@@ -4,6 +4,7 @@
   .news-inner-content-title {
     .inner-content-date {
       width: fit-content;
+      border-radius: 5px 5px 0 0;
       padding: 16px 19px;
       text-align: center;
       background: linear-gradient(180deg, #50d3ce 0%, #4fa9ff 100%);
@@ -12,7 +13,7 @@
         font-size: 56px;
         color: #fff;
         @extend .normal-font-style600;
-        margin-bottom: 1rem;
+        margin-bottom: 3px;
       }
       .inner-date-YearM {
         font-size: 16px;
@@ -86,7 +87,7 @@
         padding: 12px;
         .inner-date-day {
           font-size: 48px;
-          margin-bottom: 12px;
+          margin-bottom: 3px;
         }
         .inner-date-YearM {
           font-size: 12px;
