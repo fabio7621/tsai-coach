@@ -4,6 +4,13 @@
   .section-siteMap-main {
     width: 70.833%;
     margin: auto;
+    > h1 {
+      font-size: 44px;
+      @extend .normal-font-style500;
+      color: #000;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
     filter: blur(0);
     .accordion {
       --bs-accordion-bg: rgb(245, 245, 245);
@@ -46,6 +53,9 @@
     padding-bottom: 48px;
     .section-siteMap-main {
       width: 83%;
+      > h1 {
+        font-size: 20px;
+      }
     }
     .accordion-button:not(.collapsed) {
       background-color: #e1ded6;

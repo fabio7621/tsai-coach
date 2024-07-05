@@ -210,13 +210,12 @@
       .date-day {
         font-size: 56px;
         font-weight: 600;
-        //transform: translateX(-0.3em);
         @extend .colors-words;
       }
       .month-year {
         font-size: 16px;
         font-weight: 600;
-        //transform: translateX(-1em);
+        white-space: nowrap;
         @extend .colors-words;
       }
     }
@@ -353,7 +352,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   .tennis-coach-profile {
-    width: 48%;
+    width: 49%;
     h3 {
       font-size: 44px;
       color: #000000;
@@ -660,7 +659,7 @@
           > li {
             font-size: 15px;
             & + li {
-              margin-top: 12px;
+              margin-top: 4px;
             }
           }
         }

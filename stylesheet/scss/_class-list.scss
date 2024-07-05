@@ -154,10 +154,10 @@
     aspect-ratio: 524/226;
     @extend .hover-white-bg;
     &:nth-child(1) {
-      background-image: url(../../src/web/contact/contact-img.png);
+      background-image: url(../../src/web/contact/line-img.png);
     }
     &:nth-child(2) {
-      background-image: url(../../src/web/contact/line-img.png);
+      background-image: url(../../src/web/contact/contact-img.png);
     }
     .contact-center-box {
       margin: auto;

@@ -519,6 +519,7 @@
 .news-lists-box .news-lists-item .lists-item-date .month-year {
   font-size: 16px;
   font-weight: 600;
+  white-space: nowrap;
 }
 .news-lists-box .news-lists-item .lists-item-content {
   flex-grow: 1;
@@ -648,7 +649,7 @@
   flex-wrap: wrap;
 }
 .index-tennis-coach .tennis-coach-profile {
-  width: 48%;
+  width: 49%;
 }
 .index-tennis-coach .tennis-coach-profile h3 {
   font-size: 44px;
@@ -917,7 +918,7 @@
     font-size: 15px;
   }
   .index-tennis-coach .tennis-coach-profile .profile-title > ul > li + li {
-    margin-top: 12px;
+    margin-top: 4px;
   }
   .tennis-coach-bg {
     width: 20.3125vw;
@@ -1397,12 +1398,14 @@
 .news-item-card .news-item .news-item-date {
   width: 24%;
   padding: 0 1.042vw 1.7708vw 0;
+  font-weight: 600;
 }
 .news-item-card .news-item .news-item-date .date-day {
   font-size: 56px;
 }
 .news-item-card .news-item .news-item-date .month-year {
   font-size: 16px;
+  white-space: nowrap;
 }
 .news-item-card .news-item .news-content {
   width: 76%;
@@ -1558,10 +1561,12 @@
   padding: 16px 19px;
   text-align: center;
   background: linear-gradient(180deg, #50d3ce 0%, #4fa9ff 100%);
+  flex-shrink: 0;
 }
 .news-inner-main .news-inner-content-title .inner-content-date .inner-date-day {
   font-size: 56px;
   color: #fff;
+  font-weight: 500;
   margin-bottom: 3px;
 }
 .news-inner-main .news-inner-content-title .inner-content-date .inner-date-YearM {
@@ -1569,7 +1574,7 @@
   color: #fff;
 }
 .news-inner-main .news-inner-content-title h1 {
-  font-size: 44px;
+  font-size: 2.29166vw;
   color: #000;
   margin-left: 0.72727em;
   line-height: 1.4;
@@ -1621,6 +1626,11 @@
   width: 100%;
 }
 
+@media (max-width: 1300px) {
+  .news-inner-main .news-inner-content-title h1 {
+    font-size: 35px;
+  }
+}
 @media (max-width: 992px) {
   .news-inner-main {
     width: 100%;
@@ -1807,10 +1817,10 @@
   aspect-ratio: 524/226;
 }
 .class-contact-items .class-contact-item:nth-child(1) {
-  background-image: url(../../src/web/contact/contact-img.png);
+  background-image: url(../../src/web/contact/line-img.png);
 }
 .class-contact-items .class-contact-item:nth-child(2) {
-  background-image: url(../../src/web/contact/line-img.png);
+  background-image: url(../../src/web/contact/contact-img.png);
 }
 .class-contact-items .class-contact-item .contact-center-box {
   margin: auto;
@@ -2185,6 +2195,12 @@
   margin: auto;
   filter: blur(0);
 }
+.section-siteMap .section-siteMap-main > h1 {
+  font-size: 44px;
+  color: #000;
+  text-align: center;
+  margin-bottom: 3rem;
+}
 .section-siteMap .section-siteMap-main .accordion {
   --bs-accordion-bg: rgb(245, 245, 245);
 }
@@ -2227,6 +2243,9 @@
   }
   .section-siteMap .section-siteMap-main {
     width: 83%;
+  }
+  .section-siteMap .section-siteMap-main > h1 {
+    font-size: 20px;
   }
   .section-siteMap .accordion-button:not(.collapsed) {
     background-color: #e1ded6;
@@ -2351,12 +2370,12 @@ body {
   letter-spacing: 0.05em;
 }
 
-.normal-font-style500, .section-topnav-logo, .section-topnav > li a, .nav-singUp-btn, .phone-menu ul li a, .main-footer .footer-content .footer-brand-text, .main-footer .footer-content .footer-nav > ul li a, .main-footer .footer-content-bottem > ul li a, .main-footer .footer-content-bottem > p, .section-index-about .index-about-main .index-about-content h1, .know-more-btn, .section-index-news .index-news-main .index-news-title span, .news-lists-box .news-lists-item .lists-item-content .item-content-title h2, .tennis-class-main .tennis-class-cards .tennis-cards-item .cards-item-txt h3, .index-tennis-coach .tennis-coach-profile h3, .index-tennis-coach .tennis-coach-profile h3 span, .section-pages-bread .pages-bread-main .pages-bread-lists > li > a, .section-about-main .section-about-side h3, .section-about-main .section-about-content h1, .phone-menu-title p, .coach-profiles-item h2, .more-detail, .section-news-content h1, .news-item-card .news-item .news-content .news-content-title h2, .pages-pagination .pagination-btns .pagination-item, .pages-pagination .pages-select label, .news-inner-main .news-inner-content-title h1, .class-list-main h1, .class-listInner-main .class-listInner-card .listInner-card-title h1, .class-contact-bottem .class-contact-bottem-title > p, .class-contact-items .class-contact-item .contact-center-box p, .place-list-item p, .place-list-item ul li, .section-contact .section-contact-main h1, .section-contact .section-contact-main > p {
+.normal-font-style500, .section-topnav-logo, .section-topnav > li a, .nav-singUp-btn, .phone-menu ul li a, .main-footer .footer-content .footer-brand-text, .main-footer .footer-content .footer-nav > ul li a, .main-footer .footer-content-bottem > ul li a, .main-footer .footer-content-bottem > p, .section-index-about .index-about-main .index-about-content h1, .know-more-btn, .section-index-news .index-news-main .index-news-title span, .news-lists-box .news-lists-item .lists-item-content .item-content-title h2, .tennis-class-main .tennis-class-cards .tennis-cards-item .cards-item-txt h3, .index-tennis-coach .tennis-coach-profile h3, .index-tennis-coach .tennis-coach-profile h3 span, .section-pages-bread .pages-bread-main .pages-bread-lists > li > a, .section-about-main .section-about-side h3, .section-about-main .section-about-content h1, .phone-menu-title p, .coach-profiles-item h2, .more-detail, .section-news-content h1, .news-item-card .news-item .news-content .news-content-title h2, .pages-pagination .pagination-btns .pagination-item, .pages-pagination .pages-select label, .news-inner-main .news-inner-content-title h1, .class-list-main h1, .class-listInner-main .class-listInner-card .listInner-card-title h1, .class-contact-bottem .class-contact-bottem-title > p, .class-contact-items .class-contact-item .contact-center-box p, .place-list-item p, .place-list-item ul li, .section-contact .section-contact-main h1, .section-contact .section-contact-main > p, .section-siteMap .section-siteMap-main > h1 {
   font-weight: 500;
   letter-spacing: 0.05em;
 }
 
-.normal-font-style600, .news-item-card .news-item .news-item-date, .news-inner-main .news-inner-content-title .inner-content-date .inner-date-day, .news-inner-main .news-inner-content-title .inner-content-date .inner-date-YearM {
+.normal-font-style600, .news-inner-main .news-inner-content-title .inner-content-date .inner-date-YearM {
   font-weight: 600;
   letter-spacing: 0.05em;
 }
