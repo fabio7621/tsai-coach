@@ -801,10 +801,10 @@
     padding-bottom: 64px;
   }
   .section-index-news .index-news-main .index-news-title {
-    padding: 80px 0 64px;
+    padding: 48px 0 36px;
   }
   .section-index-news .index-news-main .index-news-title span {
-    font-size: 44px;
+    font-size: 25px;
     display: block;
     text-align: center;
   }
@@ -1330,7 +1330,7 @@
     font-size: 15px;
   }
   .coach-profiles-item .coach-profile-list li + li {
-    margin-top: 16px;
+    margin-top: 8px;
   }
   .coach-profiles-item .coach-profile-list li .coach-profile-rank {
     margin-top: 16px;
@@ -1972,6 +1972,10 @@
   line-height: 1.8;
   display: flex;
 }
+.place-list-item ul li a {
+  text-decoration: none;
+  color: #000;
+}
 .place-list-item ul li::before {
   content: "";
   display: block;
@@ -2227,7 +2231,7 @@
     padding: 17px 48px;
   }
   .site-mapitem {
-    font-size: 20px;
+    font-size: 16px;
     padding: 17px 32.5px;
   }
   .site-mapitem a {

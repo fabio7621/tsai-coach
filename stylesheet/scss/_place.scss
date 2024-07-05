@@ -21,6 +21,10 @@
       @extend .normal-font-style500;
       line-height: 1.8;
       display: flex;
+      a {
+        text-decoration: none;
+        color: #000;
+      }
       &::before {
         content: "";
         display: block;
